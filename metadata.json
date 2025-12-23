@@ -1,0 +1,7 @@
+{
+  "name": "Copy of 222Copy of DengueMapper 2025 - Monitoramento de Casos",
+  "description": "Sistema avançado de mapeamento e análise de casos suspeitos de dengue, com filtros por bairro e mês, dashboards estatísticos e análise preditiva via Gemini AI.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
