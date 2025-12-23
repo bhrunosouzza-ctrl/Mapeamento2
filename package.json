@@ -11,13 +11,12 @@
   "dependencies": {
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
-    "recharts": "^3.6.0",
-    "lucide-react": "^0.562.0",
-    "leaflet": "^1.9.4",
+    "recharts": "2.15.0",
+    "lucide-react": "0.460.0",
+    "leaflet": "1.9.4",
     "xlsx": "0.18.5",
     "jspdf": "2.5.1",
-    "jspdf-autotable": "3.8.2",
-    "@google/genai": "latest"
+    "jspdf-autotable": "3.8.2"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",

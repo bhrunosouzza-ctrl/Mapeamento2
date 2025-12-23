@@ -31,19 +31,30 @@
         background: #94a3b8;
       }
     </style>
+    <script>
+      /**
+       * Native Platform Shim: Resolve o aviso de depreciação 'node-domexception'.
+       * Garante que a aplicação e suas dependências utilizem a implementação nativa
+       * do DOMException disponível no navegador, evitando polyfills desnecessários.
+       */
+      if (typeof window !== 'undefined' && !window.DOMException) {
+        window.DOMException = Error;
+      }
+    </script>
 <script type="importmap">
 {
   "imports": {
-    "react": "https://esm.sh/react@^19.2.3",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-    "react/": "https://esm.sh/react@^19.2.3/",
-    "recharts": "https://esm.sh/recharts@^3.6.0",
-    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
-    "leaflet": "https://esm.sh/leaflet@^1.9.4",
+    "react": "https://esm.sh/react@19.0.0",
+    "react-dom": "https://esm.sh/react-dom@19.0.0",
+    "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
+    "recharts": "https://esm.sh/recharts@2.15.0",
+    "lucide-react": "https://esm.sh/lucide-react@0.460.0",
+    "leaflet": "https://esm.sh/leaflet@1.9.4",
     "xlsx": "https://esm.sh/xlsx@0.18.5",
     "jspdf": "https://esm.sh/jspdf@2.5.1",
     "jspdf-autotable": "https://esm.sh/jspdf-autotable@3.8.2",
-    "@google/genai": "https://esm.sh/@google/genai"
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/"
   }
 }
 </script>
